@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Изменение цвета фона</title>
+  <style>
+    body {
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<button onclick="changeColor()">Изменить цвет</button>
+
+<script>
+function changeColor() {
+  var colors = ["#FF6347", "#7B68EE", "#20B2AA", "#FFD700", "#8A2BE2"];
+  var randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.backgroundColor = randomColor;
+}
+</script>
+
+</body>
+</html>
+
